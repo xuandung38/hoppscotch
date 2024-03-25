@@ -233,7 +233,7 @@ useCodemirror(
   requestCode,
   reactive({
     extendedEditorConfig: {
-      mode: "text/plain",
+      mode: "application/x-sh",
       readOnly: true,
       lineWrapping: WRAP_LINES,
     },

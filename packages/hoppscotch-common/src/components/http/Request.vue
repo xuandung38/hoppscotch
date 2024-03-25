@@ -110,18 +110,6 @@
                 "
               />
               <HoppSmartItem
-                ref="show"
-                :label="`${t('show.code')}`"
-                :icon="IconCode2"
-                :shortcut="['S']"
-                @click="
-                  () => {
-                    showCodegenModal = !showCodegenModal
-                    hide()
-                  }
-                "
-              />
-              <HoppSmartItem
                 ref="clearAll"
                 :label="`${t('action.clear_all')}`"
                 :icon="IconRotateCCW"
@@ -136,6 +124,18 @@
             </div>
           </template>
         </tippy>
+      </span>
+
+      <span class="ml-2 flex rounded border border-divider transition">
+        <HoppSmartItem
+          ref="show"
+          :icon="IconCode2"
+          @click="
+            () => {
+              showCodegenModal = !showCodegenModal
+            }
+          "
+        />
       </span>
       <span class="ml-2 flex rounded border border-divider transition">
         <HoppButtonSecondary
